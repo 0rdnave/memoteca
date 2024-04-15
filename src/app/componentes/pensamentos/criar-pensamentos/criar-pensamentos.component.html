@@ -79,7 +79,7 @@
           <input
             type="radio"
             id="modelo3"
-            value="modelo3"
+            value=""
             name="modelo-card"
             [(ngModel)]="pensamento.modelo"
           />
@@ -103,7 +103,9 @@
     </div>
     <div class="acoes">
       <button (click)="criarPensamento()" class="botao">Salvar</button>
-      <button (click)="cancelar()" class="botao">Cancelar</button>
+      <button routerLink="/listarPensamento" (click)="cancelar()" class="botao">
+        Cancelar
+      </button>
     </div>
   </form>
 </section>
